@@ -1,5 +1,7 @@
 # StackShot
 
+![StackShot tech stack card](stackshot.png)
+
 StackShot is an agent skill that scans a repository and generates a polished 1200x630 image-generation prompt for a tech stack card.
 
 It collects project metadata, framework and language signals, file counts, LOC, tests, key tools, language breakdown, and optional repo styling guidance.
