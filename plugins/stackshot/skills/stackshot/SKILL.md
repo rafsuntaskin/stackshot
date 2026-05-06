@@ -1,1 +1,1 @@
-../../../../STACKSHOT.md
+../../../../SKILL.md

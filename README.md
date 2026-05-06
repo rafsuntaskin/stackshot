@@ -6,11 +6,11 @@ StackShot is an agent skill that scans a repository and generates a polished ima
 
 It collects project metadata, framework and language signals, file counts, LOC, tests, key tools, language breakdown, and optional repo styling guidance.
 
-Want to copy/paste the prompt manually? Open [STACKSHOT.md](STACKSHOT.md).
+Want to copy/paste the prompt manually? Open the [raw SKILL.md](https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/SKILL.md).
 
 [![Install for Codex](https://img.shields.io/badge/Install-Codex-111827?style=for-the-badge)](#codex)
 [![Install for Claude](https://img.shields.io/badge/Install-Claude-D97706?style=for-the-badge)](#claude)
-[![Copy Prompt](https://img.shields.io/badge/Copy-STACKSHOT.md-0F766E?style=for-the-badge)](STACKSHOT.md)
+[![Copy Prompt](https://img.shields.io/badge/Copy-SKILL.md-0F766E?style=for-the-badge)](https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/SKILL.md)
 
 ## Install As A Skill
 
@@ -18,7 +18,7 @@ Want to copy/paste the prompt manually? Open [STACKSHOT.md](STACKSHOT.md).
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills/stackshot" \
-  && curl -fsSL https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/STACKSHOT.md \
+  && curl -fsSL https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/SKILL.md \
   -o "${CODEX_HOME:-$HOME/.codex}/skills/stackshot/SKILL.md"
 ```
 
@@ -36,7 +36,7 @@ For Claude Code:
 
 ```bash
 mkdir -p "$HOME/.claude/skills/stackshot" \
-  && curl -fsSL https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/STACKSHOT.md \
+  && curl -fsSL https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/SKILL.md \
   -o "$HOME/.claude/skills/stackshot/SKILL.md"
 ```
 
@@ -50,7 +50,7 @@ Installed path:
 
 ### Manual Copy
 
-Download or copy [STACKSHOT.md](STACKSHOT.md), then save it as `SKILL.md` in your assistant's skill directory:
+Open the [raw SKILL.md](https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/SKILL.md), then save it in your assistant's skill directory:
 
 ```text
 skills/stackshot/SKILL.md
