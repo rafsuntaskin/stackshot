@@ -1,0 +1,38 @@
+{
+  "name": "stackshot",
+  "version": "0.1.0",
+  "description": "Generate image prompts for repository tech stack cards.",
+  "author": {
+    "name": "rafsuntaskin",
+    "email": "rafsun.aiub@gmail.com",
+    "url": "https://github.com/rafsuntaskin"
+  },
+  "homepage": "https://github.com/rafsuntaskin/stackshot",
+  "repository": "https://github.com/rafsuntaskin/stackshot",
+  "license": "MIT",
+  "keywords": [
+    "tech-stack",
+    "image-generation",
+    "repository-analysis",
+    "developer-card"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "StackShot",
+    "shortDescription": "Generate tech stack card prompts from repositories.",
+    "longDescription": "StackShot scans a repository for framework, language, tooling, file, LOC, test, and style signals, then produces a polished 1200x630 image-generation prompt for a developer tech stack card.",
+    "developerName": "rafsuntaskin",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Interactive"
+    ],
+    "websiteURL": "https://github.com/rafsuntaskin/stackshot",
+    "defaultPrompt": [
+      "Generate a StackShot card prompt for this repo.",
+      "Create a dark glass tech stack card prompt.",
+      "Scan this project and make a StackShot prompt."
+    ],
+    "brandColor": "#0F766E"
+  }
+}
