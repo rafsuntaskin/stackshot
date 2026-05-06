@@ -2,9 +2,9 @@
 
 ![StackShot tech stack card](stackshot.png)
 
-StackShot is an agent skill that scans a repository and generates a polished image-generation prompt for a tech stack card.
+StackShot is an agent skill that scans a repository and generates a ready-to-use image-generation prompt for a tech stack card.
 
-It collects project metadata, framework and language signals, file counts, LOC, tests, key tools, language breakdown, and optional repo styling guidance.
+It does not generate the image directly. It collects project metadata, framework and language signals, file counts, LOC, tests, key tools, language breakdown, and optional repo styling guidance, then outputs a final prompt you can paste into ChatGPT image generation, Midjourney, DALL-E, Ideogram, Leonardo, or another image model.
 
 Want to copy/paste the prompt manually? Open the [raw SKILL.md](https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/SKILL.md).
 
@@ -151,6 +151,19 @@ Use StackShot, but set the project name to "Acme Dashboard".
 ```
 
 The skill outputs a final image-generation prompt for a wide or portrait tech stack card. Paste that prompt into your preferred image model or image-generation tool.
+
+## Generate The Image
+
+After StackShot finishes, copy the generated prompt block and paste it into your preferred image-generation model.
+
+Workflow:
+
+```text
+1. Run StackShot in your repo.
+2. Copy the final generated image prompt.
+3. Paste that prompt into an image-generation model.
+4. Save or share the generated tech stack card.
+```
 
 ## Marketplace Repository
 
