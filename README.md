@@ -2,7 +2,7 @@
 
 ![StackShot tech stack card](stackshot.png)
 
-StackShot is an agent skill that scans a repository and generates a polished 1200x630 image-generation prompt for a tech stack card.
+StackShot is an agent skill that scans a repository and generates a polished image-generation prompt for a tech stack card.
 
 It collects project metadata, framework and language signals, file counts, LOC, tests, key tools, language breakdown, and optional repo styling guidance.
 
@@ -66,10 +66,10 @@ If your agent supports plugin slash commands, use:
 /stackshot
 ```
 
-or with a style:
+or with a style and format:
 
 ```text
-/stackshot minimal
+/stackshot minimal wide
 ```
 
 Skills are usually model-invoked: the agent decides to use StackShot when your request matches the skill description. The slash command is a convenience wrapper that explicitly asks the agent to run the StackShot workflow.
@@ -99,6 +99,15 @@ terminal
 
 Use `default` when you want StackShot to inspect the repository's own CSS, theme files, design tokens, assets, README, or brand docs and infer a visual direction.
 
+If you do not specify a format, StackShot asks whether you want:
+
+```text
+wide
+portrait
+```
+
+Use `wide` for a 1200x630 landscape card. Use `portrait` for a 900x1600 mobile-friendly vertical card that reads well in Facebook feeds.
+
 Example prompts:
 
 ```text
@@ -106,18 +115,18 @@ Use StackShot for this repo and use the default style.
 ```
 
 ```text
-Generate a minimal StackShot prompt for this project.
+Generate a minimal wide StackShot prompt for this project.
 ```
 
 ```text
-Scan this repository and create a cyberpunk tech stack card prompt.
+Scan this repository and create a cyberpunk portrait tech stack card prompt.
 ```
 
 ```text
 Use StackShot, but set the project name to "Acme Dashboard".
 ```
 
-The skill outputs a final image-generation prompt for a 1200x630 tech stack card. Paste that prompt into your preferred image model or image-generation tool.
+The skill outputs a final image-generation prompt for a wide or portrait tech stack card. Paste that prompt into your preferred image model or image-generation tool.
 
 ## Marketplace Repository
 
