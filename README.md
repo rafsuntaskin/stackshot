@@ -8,39 +8,63 @@ It collects project metadata, framework and language signals, file counts, LOC, 
 
 Want to copy/paste the prompt manually? Open [STACKSHOT.md](STACKSHOT.md).
 
-## Install For Codex
+[![Install for Codex](https://img.shields.io/badge/Install-Codex-111827?style=for-the-badge)](#codex)
+[![Install for Claude](https://img.shields.io/badge/Install-Claude-D97706?style=for-the-badge)](#claude)
+[![Copy Prompt](https://img.shields.io/badge/Copy-STACKSHOT.md-0F766E?style=for-the-badge)](STACKSHOT.md)
 
-### Install From GitHub
+## Install As A Skill
 
-Install StackShot directly from the plugin repository:
+### Codex
 
 ```bash
-codex plugin add github:rafsuntaskin/stackshot
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills/stackshot" \
+  && curl -fsSL https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/STACKSHOT.md \
+  -o "${CODEX_HOME:-$HOME/.codex}/skills/stackshot/SKILL.md"
 ```
 
-StackShot exposes the installable skill from:
+Start a new Codex session after installing.
+
+Installed path:
 
 ```text
-plugins/stackshot/skills/stackshot/SKILL.md
+~/.codex/skills/stackshot/SKILL.md
 ```
 
-Restart Codex or start a new session so the skill can be discovered.
+### Claude
 
-### Install From The Marketplace
+For Claude Code:
 
-Add the `ai-plugins` marketplace:
+```bash
+mkdir -p "$HOME/.claude/skills/stackshot" \
+  && curl -fsSL https://raw.githubusercontent.com/rafsuntaskin/stackshot/main/STACKSHOT.md \
+  -o "$HOME/.claude/skills/stackshot/SKILL.md"
+```
+
+Start a new Claude Code session after installing.
+
+Installed path:
+
+```text
+~/.claude/skills/stackshot/SKILL.md
+```
+
+### Manual Copy
+
+Download or copy [STACKSHOT.md](STACKSHOT.md), then save it as `SKILL.md` in your assistant's skill directory:
+
+```text
+skills/stackshot/SKILL.md
+```
+
+## Marketplace
+
+StackShot is listed in the `rafsuntaskin/ai-plugins` marketplace for discovery:
 
 ```bash
 codex plugin marketplace add rafsuntaskin/ai-plugins
 ```
 
-Then install StackShot from that marketplace:
-
-```bash
-codex plugin add stackshot
-```
-
-The marketplace entry points to:
+Current Codex CLI versions register marketplaces from the terminal, but do not expose a `codex plugin add <plugin>` command. Use the Codex skill install command above for now.
 
 ```text
 github:rafsuntaskin/stackshot
